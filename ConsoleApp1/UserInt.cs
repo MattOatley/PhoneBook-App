@@ -73,9 +73,9 @@ namespace ConsoleApp1
 
         }
 
-        public static void ReadContacts()
+        public void ReadContacts()
         {
-
+            Console.WriteLine($"{contactList.contactName}'s contact is: Address - {contactList.contactAddress} - Phone Number - {contactList.contactNumber}");
         }
 
         public static void UpdateContacts()
