@@ -64,6 +64,8 @@ namespace ConsoleApp1
             contactList.contactName = Console.ReadLine();
             Console.WriteLine("Please enter your contacts address");
             contactList.contactAddress = Console.ReadLine();
+            Console.WriteLine("Please enter your contacts email address");
+            contactList.contactEmail = Console.ReadLine();
             Console.WriteLine("Please enter your contacts phone number");
             contactList.contactNumber = int.Parse(Console.ReadLine());
 
@@ -71,7 +73,7 @@ namespace ConsoleApp1
 
         public void ReadContacts()
         {
-            Console.WriteLine($"{contactList.contactName}'s contact is: Address - {contactList.contactAddress} - Phone Number - {contactList.contactNumber}");
+            Console.WriteLine($"{contactList.contactName}'s contact is: Address - {contactList.contactAddress} - Phone Number - {contactList.contactNumber} - Email {contactList.contactEmail}");
         }
 
         public static void UpdateContacts()
@@ -88,5 +90,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("You have decide to exit the application. Have a great day!");
         }
+
+
     }
 }
