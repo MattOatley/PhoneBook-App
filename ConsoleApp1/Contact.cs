@@ -8,7 +8,8 @@ namespace ConsoleApp1
     {
         public string contactName { get; set; }
         public string contactAddress { get; set; }
-        public int contactNumber { get; set; }
+        public string contactEmail { get; set; }
+        public double contactNumber { get; set; }
 
 
         

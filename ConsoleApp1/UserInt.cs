@@ -67,7 +67,7 @@ namespace ConsoleApp1
             Console.WriteLine("Please enter your contacts email address");
             contactList.contactEmail = Console.ReadLine();
             Console.WriteLine("Please enter your contacts phone number");
-            contactList.contactNumber = int.Parse(Console.ReadLine());
+            contactList.contactNumber = double.Parse(Console.ReadLine());
 
         }
 
