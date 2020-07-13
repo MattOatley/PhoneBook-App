@@ -52,11 +52,7 @@ namespace ConsoleApp1
                     break;
                 case "5":
                     EndApp();
-
-                    Introduction();
-                    UserSelection();
                     break;
-
 
             }
         }
@@ -90,7 +86,7 @@ namespace ConsoleApp1
 
         public static void EndApp()
         {
-
+            Console.WriteLine("You have decide to exit the application. Have a great day!");
         }
     }
 }
