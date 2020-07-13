@@ -8,18 +8,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            UserInt userData = new UserInt();
+
+            UserInt.Introduction();
+            userData.UserSelection();
             
-            Console.WriteLine("Welcome to your phonebook!");
-            Console.WriteLine("How would you like to proceed?");
-            Console.WriteLine("1. Create a new contact");
-            Console.WriteLine("2. Read all contacts");
-            Console.WriteLine("3. Update an existing contact");
-            Console.WriteLine("4. Delete an existing contact");
-            Console.WriteLine("5. End the application");
-
-            int selection = int.Parse(Console.ReadLine());
-            Console.WriteLine(Contact.Intro(selection)); 
-
 
            
 

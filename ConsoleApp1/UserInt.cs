@@ -6,6 +6,8 @@ namespace ConsoleApp1
 {
     class UserInt :Contact
     {
+        Contact contactList = new Contact();
+        
 
         public static void Introduction()
         {
@@ -19,7 +21,7 @@ namespace ConsoleApp1
         }
 
 
-        public static void UserSelection()
+        public void UserSelection()
         {
             string userAnswer = Console.ReadLine();
             switch (userAnswer)
@@ -43,28 +45,50 @@ namespace ConsoleApp1
                     UserSelection();
                     break;
                 case "4":
+                    DeleteContact();
+
+                    Introduction();
+                    UserSelection();
+                    break;
+                case "5":
+                    EndApp();
+
+                    Introduction();
+                    UserSelection();
+                    break;
+
 
             }
         }
 
-        public static void AddContact()
+        public void AddContact()
         {
 
             Console.WriteLine("Please enter a the contacts name");
-            Console.ReadLine();
+            contactList.contactName = Console.ReadLine();
             Console.WriteLine("Please enter your contacts address");
-            Console.ReadLine();
+            contactList.contactAddress = Console.ReadLine();
             Console.WriteLine("Please enter your contacts phone number");
-            Console.ReadLine();
+            contactList.contactNumber = int.Parse(Console.ReadLine());
 
         }
 
-        public static string ReadContacts()
+        public static void ReadContacts()
         {
 
         }
 
         public static void UpdateContacts()
+        {
+
+        }
+
+        public static void DeleteContact()
+        {
+
+        }
+
+        public static void EndApp()
         {
 
         }
